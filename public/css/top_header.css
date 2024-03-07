@@ -1,0 +1,35 @@
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    
+}
+
+.user-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.user-wrapper small {
+    display: flex;
+    color: black;
+    margin-top: -2px;
+    font-size: 1.1rem;
+    align-items: left;
+    position: absolute;
+    left: 87%;
+    top: 8%;
+}
+
+.user-wrapper small img {
+    width: 33px;
+    height: 33px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+header h2 {
+    color: black;
+}

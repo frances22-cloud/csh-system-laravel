@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+html {
+    font-size: 15px;
+    font-family: "Titillium";
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.top-menu h2 {
+    display: inline;
+    margin-top: 0;
+    font-size: 35px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+.mat-main{
+    width: 100%;
+}
+
+.top-menu {
+    width: 100%;
+    display: flex;
+    padding-top: 8px;
+}
+
+.credentials {
+    margin-left: auto;
+    margin-right: 0;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+.credentials h3 {
+    margin-top: 5px;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+
+.pic-area {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+
+.nav {
+    /* top: 250px; */
+    width: 100%;
+    height: 60px;
+    background-color: rgb(56, 52, 52);
+    display: block;
+    z-index: 1;
+}
+
+.snip1168 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: x-large;
+    font-weight: 500;
+}
+
+.snip1168 * {
+    box-sizing: border-box;
+}
+
+.snip1168 li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 20px 1.5em;
+    padding: 0;
+}
+
+.snip1168 a {
+    padding: 0.5em 0;
+    color: rgb(194, 13, 13);
+    position: relative;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.snip1168 a:before,
+.snip1168 a:after {
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.snip1168 a:before {
+    top: 0;
+    display: block;
+    height: 3px;
+    width: 0%;
+    content: "";
+    background-color: #ffffff;
+}
+
+.snip1168 a:after {
+    left: 0;
+    top: 0;
+    padding: 0.5em 0;
+    position: absolute;
+    content: attr(data-hover);
+    color: #ffffff;
+    white-space: nowrap;
+    max-width: 0%;
+    overflow: hidden;
+}
+
+.snip1168 a:hover:before,
+.snip1168 .current a:before {
+    opacity: 1;
+    width: 100%;
+}
+
+.snip1168 a:hover:after,
+.snip1168 .current a:after {
+    max-width: 100%;
+}
+
+
+/*************************Bottom half***********************************/
+/*************************Classes***********************************/
+
+.materialbox {
+    position: absolute;
+    top: 20%;
+    left: 7%;
+    width: 85%;
+}
+
+.material {
+    position: relative;
+    margin-bottom: 20px;
+    background-color: rgb(212, 201, 201);
+    width: 100%;
+    min-height: 80px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.material:hover {
+    transform: scale(1.01);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.material h4 {
+    color: black;
+    font-size: 20px;
+}
+
+.material a {
+    font-size: 18px;
+    color: rgb(32, 30, 30);
+    /* display: block; */
+    /* margin: 8px 0; */
+}
+
+.material a:hover {
+    color: rgb(150, 5, 5);
+}
+
+.material button {
+    /* position: absolute; */
+    /* left: 95%; */
+    /* height: 25px; */
+    padding: 1px;
+}
+
+.material .title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.material .mat-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.material h4,
+.material a {
+    flex-basis: 90%;
+}
+
+.material form {
+    /* width: 70%; */
+    display: flex;
+    /* justify-content: right; */
+}
+
+.del {
+    margin-top: 0;
+    margin-left: 2em;
+
+}
+
+/*************************Students***********************************/
+
+.materialbox h2 {
+    font-size: 35px;
+    color: #462A1C;
+    display: inline;
+}
+
+.materialbox hr {
+    width: 100%;
+    margin-bottom: 7px;
+    margin-top: 6px;
+}
+
+.total {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: black;
+    border-style: solid;
+    border-width: 2px;
+    color: black;
+    display: inline;
+    position: absolute;
+    left: 95%;
+    top: 0px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+hr {
+    border-top: 3px solid black;
+}
+
+.student {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.student i {
+    font-size: 30px;
+}
+
+.admno {
+    position: absolute;
+    left: 80px;
+    margin-top: 4px;
+}
+
+.name {
+    position: absolute;
+    left: 200px;
+    margin-top: 5px;
+}
+
+/*************************Materials***********************************/
+
+.lec-materials {
+    /* position: absolute; */
+    /* top: 330px; */
+    margin: 15px 15px 10px;
+    /* left: ; */
+    width: 90%;
+    padding-left: 3%;
+
+}
+/* .mat-mainform{
+    padding-left: 3px;
+} */
+
+.lec-materials form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+button {
+    background: rgb(56, 52, 52);
+    border: 0px solid #fff;
+    margin-top: 10px;
+    /* height: 45px; */
+    width: max-content;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    transition: .4s;
+}
+
+button:hover {
+    color: rgb(150, 5, 5);
+    background-color: white;
+    border:1px solid black;
+
+}
+
+.file-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.file-input::before {
+    content: 'UPLOAD FILE';
+    display: inline-block;
+    background: linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 1px solid #462A1C;
+    margin-left: 0px;
+    margin-top: 4px;
+    height: 30px;
+    border-radius: 20px;
+    padding: 0 10px;
+    padding-top: 5px;
+    width: 200px;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+}
+
+.file {
+    width: 205px;
+}
+
+.input {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid black;
+    outline: 0;
+    font-size: 1.3rem;
+    color: black;
+    padding: 7px 0;
+    background: transparent;
+    margin-bottom: 30px;
+}
+
+.lec-materials label {
+    font-size: 20px;
+    color: rgb(56, 52, 52);
+}
+
+.mini-section {
+    display: flex;
+}
+
+#post-btn {
+    width: 100px;
+    margin-left: 80%;
+}
+
+option {
+    color: rgb(56, 52, 52);
+    font-weight: 100;
+}
+
+/*************************Assignments***********************************/
+.assgn {
+    position: relative;
+    margin-bottom: 20px;
+    background-color: rgb(245, 243, 243);
+    width: 100%;
+    /* height: 30px; */
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.assgn button {
+    padding: 3px;
+    font-size: 12pt;
+    /* margin-left: 2em; */
+}
+
+.assgn a {
+    font-size: 16px;
+    color: rgb(6, 115, 129);
+    flex-basis: 90%;
+}
+
+.assgn a:hover {
+    color: black;
+}
+
+.edit {
+    margin-left: 90%;
+}
+
+.assgn1 {
+    position: relative;
+    margin-bottom: 20px;
+    background-color: rgb(245, 243, 243);
+    width: 100%;
+    /* height: 30px; */
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.assgn1 button {
+    padding: 10px;
+    font-size: 12pt;
+    margin-top: 0;
+}
+
+.assgn1 a {
+    font-size: 16px;
+    color: rgb(6, 115, 129);
+    flex-basis: 90%;
+}
+
+.assgn1 a:hover {
+    color: black;
+}
+
+#Ass-head {
+    display: block;
+    margin-top: 15px;
+}
+
+
+
+.box {
+    margin-top: 3%;
+    margin-left: 2%;
+    text-align: left;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+}
+
+.overlay .wrapper {
+    margin: 70px auto;
+    padding: 20px;
+    background: #e7e7e7;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all .4s ease-in-out;
+}
+
+.overlay .wrapper .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+.overlay .container {
+    border-radius: 5px;
+    background-color: #e7e7e7;
+    padding: 20px 0;
+}
+
+.overlay #close {
+    color:rgb(163, 8, 8);
+    float: right;
+    transition: .4s;
+}
+
+.overlay #close:hover {
+    color: black;
+}
+
+.overlay #create-btn {
+    float: right;
+}
+
+#back_btn{
+    margin-left: 88%;
+}

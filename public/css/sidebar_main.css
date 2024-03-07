@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+.sidebar {
+    width: 15%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: black;
+    z-index: 100;
+}
+
+.sidebar-brand {
+    /* line-height: 40px; */
+    width: 100%;
+    padding: 1rem;
+    padding-left: 1.2rem;
+    display: flex;
+    justify-content: left;
+}
+
+.sidebar-brand h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(163, 8, 8);
+    margin-left: 0;
+}
+
+.sidebar-brand img {
+    width: 150px;
+    /* margin: auto;  */
+}
+
+.sidebar-menu li {
+    width: 100%;
+    margin-bottom: 1.3rem;
+    padding-left: 2rem;
+}
+
+.sidebar-menu {
+    margin-top: 1rem;
+}
+
+.sidebar-menu a {
+    display: block;
+    color: white;
+    font-size: 1.15vw;
+}
+
+.sidebar-menu a:hover {
+    color: rgb(163, 8, 8);
+    transition: .4s;
+}
+
+.sidebar-menu a span:first-child {
+    font-size: 1.8vw;
+    padding-right: 1.2vw;
+}
+
